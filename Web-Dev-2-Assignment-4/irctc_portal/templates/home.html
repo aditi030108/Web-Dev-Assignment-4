@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Welcome to IRCTC Railway Reservation System</h2>
+
+<h3>Featured Train</h3>
+<p>Train Number: {{ train.train_no }}</p>
+<p>Train Name: {{ train.train_name }}</p>
+<p>From: {{ train.source }}</p>
+<p>To: {{ train.destination }}</p>
+<p>Departure: {{ train.departure }}</p>
+<p>Arrival: {{ train.arrival }}</p>
+{% endblock %}

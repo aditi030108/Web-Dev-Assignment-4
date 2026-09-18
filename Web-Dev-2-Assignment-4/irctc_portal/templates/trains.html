@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Available Trains</h2>
+
+{% for t in trains %}
+<hr>
+<p>Train Number: {{ t.train_no }}</p>
+<p>Train Name: {{ t.train_name }}</p>
+<p>From: {{ t.source }}</p>
+<p>To: {{ t.destination }}</p>
+<p>Departure: {{ t.departure }}</p>
+<p>Arrival: {{ t.arrival }}</p>
+{% endfor %}
+{% endblock %}
